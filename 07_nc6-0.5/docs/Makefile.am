@@ -1,0 +1,3 @@
+man_MANS = nc6.1
+
+MAINTAINERCLEANFILES = Makefile.in

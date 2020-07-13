@@ -1,0 +1,1 @@
+(ff:def-foreign-call kaijo ((x :int)) :returning :int)

@@ -1,0 +1,142 @@
+WHAT IS NETCAT6?
+----------------
+
+netcat6 is a clone of the original netcat utility.  From the netcat README:
+
+"Netcat is a simple Unix utility which reads and writes data across network
+connections.  It is designed to be a reliable "back-end" tool that can be used
+directly or easily driven by other programs and scripts.  At the same time, it
+is a feature-rich network debugging and exploration tool, since it can create
+almost any kind of connection you would need and has several interesting
+built-in capabilities.  Netcat, or "nc" as the actual program is named, should
+have been supplied long ago as another one of those cryptic but standard Unix
+tools."
+
+netcat6 is a total rewrite of netcat, with several advantages:
+
+  o It fully supports IPv6.
+  o It is far more efficient, utilizing flexible buffering and minimal
+    (or no) data copying or analysis.
+  o The source is well structured, documented and very easy to follow.
+  o One of the main objectives of netcat6 is to produce an excellent example
+    of AF independant networking and efficient data transfer.  The code has
+    minimal dependancy on the address family or protocol type and can be
+    trivially extended to talk many layer 3 protocols.
+  o Greatly improved configuration and platform indipendence.
+  o Can support servers or clients that use TCP half-close.
+
+Some features of the original netcat are not present in netcat6, either
+because they haven't yet been implemented or because there exists better tools
+for the job.  See the TODO file for more information.
+
+
+USAGE
+-----
+
+In the simplest usage, "nc6 host port" creates a TCP connection to the given
+port on the given target host (using either IPv4 or IPv6 as appropriate).
+Your standard input is then sent to the host, and anything that comes back
+across the connection is sent to your standard output.  This continues
+indefinitely, until the network side of the connection shuts down.  Note that
+this behavior is different from most applications which shut everything down
+and exit after an end-of-file on standard input.
+
+Netcat6 can also function as a server, by listening for inbound connections on
+arbitrary ports and then doing the same reading and writing when a client
+connects.  With minor limitations, netcat doesn't really care if it runs in
+"client" or "server" mode -- it still shovels data back and forth until there
+isn't any more left.
+
+Netcat6 can also be used over UDP (using the '-u' or '--udp' option).  UDP is
+an unreliable transport protocol, meaning some data can get lost, but it's a
+very useful capability to have.
+
+Some of netcat6's major features are:
+
+  o Outbound or inbound connections, using TCP or UDP over any suitable
+    transport protocol available on the system (usually IPv4 or IPv6).
+  o Full DNS forward/reverse checking, with appropriate warnings.
+  o Ability to use any local source port
+  o Ability to use any locally-configured network source address
+  o Flexible data buffering and control of MTU
+  o Flexible control of connection shutdown.
+
+Efforts have been made to have netcat6 "do the right thing" in all its various
+modes.  One of the development principles is "the principle of least
+surprise".  This means that netcat6 should do what you expect it to do.  If
+you think it doesn't do something quite right, let us know and we'll look into
+it.
+
+Netcat6 is licensed under the GNU Public License (see COPYING).
+
+
+BUILDING
+--------
+
+See the INSTALL file for specific installation instructions.  For those who
+can't wait, the following should do it:
+
+# ./configure
+# make
+# make install
+
+If the build fails on your system, please let us know so that we can fix the
+issue.
+
+
+MAILING LIST
+------------
+
+There is a mailing list for the discussion of netcat6 and other ipv6
+applications.  It is open to anyone to join, and new versions will be
+announced to this list.
+
+To join the mailing list see the webpage at http://lists.deepspace6.net/
+
+To send mail to the list, send it to ds6@deepspace6.net
+
+
+BUG REPORTS
+-----------
+
+First look at the file BUGS.  It contains some known major limitations in
+netcat6.
+
+Please send bug reports to:
+
+  ds6-devel@deepspace6.net
+
+
+CVS TREE
+--------
+
+If you want to get the very latest version of netcat6 direct from the source
+code repository then you can use anonymous cvs.  You will need a recent
+version of cvs and use the following commands:
+
+$ cvs -d :pserver:anonymous@cvs.deepspace6.net:/ds6/cvs login
+
+(just press enter at the password prompt)
+
+$ cvs -d :pserver:anonymous@cvs.deepspace6.net:/ds6/cvs co nc6
+
+Building from a CVS version is slightly different, so after checking out the
+CVS version, read README.Maint for instructions.
+
+
+AVAILABILITY
+------------
+
+The main web site for netcat6 is http://www.deepspace6.net
+Source tarballs can be downloaded from:
+	ftp://ftp.deepspace6.net/pub/sources/nc6/
+	http://ftp.deepspace6.net:/pub/sources/nc6/
+
+
+COPYRIGHT
+---------
+
+netcat6 is licensed under the GNU General Public License,
+found in the file COPYING in this distribution, or at:
+
+  http://www.fsf.org/licenses/gpl.html

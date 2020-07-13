@@ -1,0 +1,516 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2003-05-11 14:28+0200\n"
+"PO-Revision-Date: 2003-01-14 22:27GMT\n"
+"Last-Translator: Simone Piunno <pioppo@ferrara.linux.it>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.6\n"
+
+#: src/connection.c:94
+msgid "internal error: system does not support ipv6"
+msgstr ""
+
+#: src/connection.c:104
+msgid "internal error: unknown socket domain"
+msgstr ""
+
+#: src/connection.c:125
+msgid "internal error: unknown socket type"
+msgstr ""
+
+#: src/filter.c:214
+#, c-format
+msgid "getaddrinfo error: %s"
+msgstr ""
+
+#: src/io_stream.c:81
+#, c-format
+msgid "error in duplicating stdin file descriptor: %s"
+msgstr ""
+
+#: src/io_stream.c:85
+#, c-format
+msgid "error in duplicating stdout file descriptor: %s"
+msgstr ""
+
+#: src/io_stream.c:201
+#, c-format
+msgid "%s idle timed out"
+msgstr ""
+
+#: src/io_stream.c:228
+#, c-format
+msgid "%s hold timed out"
+msgstr ""
+
+#: src/io_stream.c:282
+#, c-format
+msgid "read eof from %s"
+msgstr ""
+
+#: src/io_stream.c:300
+#, c-format
+msgid "error reading from %s: %s"
+msgstr ""
+
+#: src/io_stream.c:348
+#, c-format
+msgid "received SIGPIPE on %s"
+msgstr ""
+
+#: src/io_stream.c:350
+#, c-format
+msgid "error writing to %s: %s"
+msgstr ""
+
+#: src/io_stream.c:388
+#, c-format
+msgid "closed %s"
+msgstr ""
+
+#: src/io_stream.c:400
+#, c-format
+msgid "shutdown %s for read"
+msgstr ""
+
+#: src/io_stream.c:406
+#, c-format
+msgid "closed %s for read"
+msgstr ""
+
+#: src/io_stream.c:421
+#, c-format
+msgid "shutdown %s for write"
+msgstr ""
+
+#: src/io_stream.c:427
+#, c-format
+msgid "closed %s for write"
+msgstr ""
+
+#: src/main.c:136
+msgid "internal error: unknown connection mode"
+msgstr ""
+
+#: src/main.c:160
+#, c-format
+msgid "fork failed: %s"
+msgstr ""
+
+#: src/main.c:220
+#, c-format
+msgid "using buffer size of %d"
+msgstr ""
+
+#: src/main.c:222
+#, c-format
+msgid "using remote receive nru of %d"
+msgstr ""
+
+#: src/main.c:225
+#, c-format
+msgid "using remote send mtu of %d"
+msgstr ""
+
+#: src/main.c:255
+#, c-format
+msgid "Executing '%s'"
+msgstr ""
+
+#: src/main.c:257
+#, c-format
+msgid "Failed to exec '%s': %s"
+msgstr ""
+
+#: src/main.c:311
+msgid "receiving from remote only, transmit disabled"
+msgstr ""
+
+#: src/main.c:327
+msgid "transmitting to remote only, receive disabled"
+msgstr ""
+
+#: src/main.c:335
+#, c-format
+msgid "connection closed (sent %d, rcvd %d)"
+msgstr "connessione terminata (inviati %d, ricevuti %d)"
+
+#: src/misc.c:85
+msgid "virtual memory exhausted"
+msgstr ""
+
+#: src/misc.c:106
+#, c-format
+msgid "error reading file descriptor flags: %s"
+msgstr ""
+
+#: src/misc.c:112
+msgid "error setting flag O_NONBLOCK on file descriptor"
+msgstr ""
+
+#: src/misc.c:174 src/misc.c:179 src/misc.c:184
+#, c-format
+msgid "dup2 failed: %s"
+msgstr ""
+
+#: src/misc.c:189
+#, c-format
+msgid "execv failed: %s"
+msgstr ""
+
+#: src/misc.c:219
+msgid "error parsing integer: out of range"
+msgstr ""
+
+#: src/misc.c:221
+msgid "error parsing integer from string"
+msgstr ""
+
+#: src/network.c:100
+#, c-format
+msgid "forward host lookup failed for remote endpoint %s: %s"
+msgstr ""
+
+#: src/network.c:122
+#, c-format
+msgid "socket creation failed: %s"
+msgstr ""
+
+#: src/network.c:133 src/network.c:453
+msgid "error with sockopt IPV6_V6ONLY"
+msgstr ""
+
+#: src/network.c:165 src/network.c:192
+#, c-format
+msgid "bind to source addr/port failed when connecting to %s: %s"
+msgstr ""
+
+#: src/network.c:216
+#, c-format
+msgid "cannot connect to %s: %s"
+msgstr ""
+
+#: src/network.c:224
+#, c-format
+msgid "timeout while connecting to %s"
+msgstr ""
+
+#: src/network.c:246
+msgid "forward lookup returned no usable socket types"
+msgstr ""
+
+#: src/network.c:249
+#, c-format
+msgid "unable to connect to address %s, service %s"
+msgstr ""
+
+#: src/network.c:256
+#, c-format
+msgid "%s open"
+msgstr ""
+
+#: src/network.c:310 src/network.c:555 src/readwrite.c:162
+#, c-format
+msgid "select error: %s"
+msgstr ""
+
+#: src/network.c:320
+#, c-format
+msgid "getsockopt error: %s"
+msgstr ""
+
+#: src/network.c:384
+#, c-format
+msgid "forward host lookup failed for local endpoint %s (%s): %s"
+msgstr ""
+
+#: src/network.c:386
+msgid "[unspecified]"
+msgstr ""
+
+#: src/network.c:442
+#, c-format
+msgid "cannot create the socket: %s"
+msgstr ""
+
+#: src/network.c:478 src/network.c:501
+#, c-format
+msgid "listening on %s ..."
+msgstr ""
+
+#: src/network.c:483
+#, c-format
+msgid "bind to source %s failed: %s"
+msgstr ""
+
+#: src/network.c:496
+#, c-format
+msgid "cannot listen on %s: %s"
+msgstr ""
+
+#: src/network.c:526
+msgid "failed to bind to any local addr/port"
+msgstr ""
+
+#: src/network.c:551
+msgid "connection timed out"
+msgstr ""
+
+#: src/network.c:576
+#, c-format
+msgid "accept failed: %s"
+msgstr ""
+
+#: src/network.c:585
+#, c-format
+msgid "recvfrom failed: %s"
+msgstr ""
+
+#: src/network.c:590
+#, c-format
+msgid "dup failed: %s"
+msgstr ""
+
+#: src/network.c:601
+#, c-format
+msgid "getsockname failed: %s"
+msgstr ""
+
+#: src/network.c:626
+#, c-format
+msgid "cannot failed on datagram socket: %s"
+msgstr ""
+
+#: src/network.c:632
+#, c-format
+msgid "connect to %s from %s"
+msgstr ""
+
+#: src/network.c:653
+#, c-format
+msgid "refused connect to %s from %s"
+msgstr ""
+
+#: src/network.c:773
+#, c-format
+msgid "getnameinfo failed: %s"
+msgstr ""
+
+#: src/network.c:783
+#, c-format
+msgid "inverse lookup failed for %s: %s"
+msgstr ""
+
+#: src/network.c:812
+#, c-format
+msgid "error with setsockopt SO_REUSEADDR: %s"
+msgstr ""
+
+#: src/network.c:825
+#, c-format
+msgid "error with setsockopt TCP_NODELAY: %s"
+msgstr ""
+
+#: src/network.c:834
+#, c-format
+msgid "error with setsockopt SO_SNDBUF: %s"
+msgstr ""
+
+#: src/network.c:843
+#, c-format
+msgid "error with setsockopt SO_RCVBUF: %s"
+msgstr ""
+
+#: src/network.c:862
+msgid "using stream socket"
+msgstr ""
+
+#: src/network.c:865
+msgid "using datagram socket"
+msgstr ""
+
+#: src/network.c:868
+#, c-format
+msgid "internal error: unsupported socktype %d"
+msgstr ""
+
+#: src/network.c:875
+#, c-format
+msgid "error with getsockopt SO_SNDBUF: %s"
+msgstr ""
+
+#: src/network.c:878
+#, c-format
+msgid "using socket sndbuf size of %d"
+msgstr ""
+
+#: src/network.c:885
+#, c-format
+msgid "error with getsockopt SO_RCVBUF: %s"
+msgstr ""
+
+#: src/network.c:888
+#, c-format
+msgid "using socket rcvbuf size of %d"
+msgstr ""
+
+#: src/parser.c:199
+#, c-format
+msgid "getopt returned unexpected long option offset index %d\n"
+msgstr ""
+
+#: src/parser.c:269
+#, c-format
+msgid "getopt returned unexpected character 0%o\n"
+msgstr ""
+
+#: src/parser.c:307
+msgid "Cannot set both --recv-only and --send-only"
+msgstr ""
+
+#: src/parser.c:343
+msgid "in listen mode you must specify a port with the -p switch"
+msgstr ""
+
+#: src/parser.c:351
+msgid "--continuous option must be used with --exec"
+msgstr ""
+
+#: src/parser.c:358
+msgid "--no-reuseaddr option can be used only in listen mode"
+msgstr ""
+
+#: src/parser.c:364
+msgid "--continuous option can be used only in listen mode"
+msgstr ""
+
+#: src/parser.c:373
+msgid "you must specify the address/port couple of the remote endpoint"
+msgstr ""
+
+#: src/parser.c:443
+#, c-format
+msgid ""
+"Usage:\n"
+"\t%s [options...] hostname port\n"
+"\t%s -l -p port [-s addr] [options...] [hostname] [port]\n"
+"\n"
+"Recognized options are:\n"
+msgstr ""
+
+#: src/parser.c:449
+msgid ""
+" -4                     Use only IPv4\n"
+" -6                     Use only IPv6\n"
+" --buffer-size=BYTES    Set buffer size\n"
+" --continuous           Continuously accept connections\n"
+"                        (only in listen mode with --exec)\n"
+" --disable-nagle        Disable nagle algorithm for TCP connections\n"
+" -e, --exec=CMD         Exec command after connect\n"
+" --half-close           Handle network half-closes correctly\n"
+" -h, --help             Display help\n"
+" -l, --listen           Listen mode, for inbound connects\n"
+" --mtu=BYTES            Set MTU for network connection transmits\n"
+" -n                     Numeric-only IP addresses, no DNS\n"
+" --no-reuseaddr         Disable SO_REUSEADDR socket option\n"
+"                        (only in listen mode)\n"
+" --nru=BYTES            Set NRU for network connection receives\n"
+" -p, --port=PORT        Local source port\n"
+" -q, --hold-timeout=SEC1[:SEC2]\n"
+"                        Set hold timeout(s) for local [and remote]\n"
+" --rcvbuf-size          Kernel receive buffer size for network sockets\n"
+" --recv-only            Only receive data, don't transmit\n"
+" -s, --address=ADDRESS  Local source address\n"
+" --send-only            Only transmit data, don't receive\n"
+" --sndbuf-size          Kernel send buffer size for network sockets\n"
+" -t, --idle-timeout=SECONDS\n"
+"                        Idle connection timeout\n"
+" -u, --udp              Require use of UDP\n"
+" -v                     Increase program verbosity\n"
+"                        (call twice for max verbosity)\n"
+" --version              Display nc6 version information\n"
+" -w, --timeout=SECONDS  Timeout for connects/accepts\n"
+" -x, --transfer         File transfer mode\n"
+"\n"
+msgstr ""
+
+#: src/parser.c:490
+#, c-format
+msgid ""
+"%s version %s\n"
+"Copyright (C) 2001-2003\n"
+msgstr ""
+
+#: src/parser.c:501
+msgid "Configured with IPv6 support\n"
+msgstr ""
+
+#: src/parser.c:504
+msgid "Configured without IPv6 support\n"
+msgstr ""
+
+#: contrib/getopt.c:693
+#, c-format
+msgid "%s: option `%s' is ambiguous\n"
+msgstr ""
+
+#: contrib/getopt.c:718
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr ""
+
+#: contrib/getopt.c:723
+#, c-format
+msgid "%s: option `%c%s' doesn't allow an argument\n"
+msgstr ""
+
+#: contrib/getopt.c:741 contrib/getopt.c:914
+#, c-format
+msgid "%s: option `%s' requires an argument\n"
+msgstr ""
+
+#. --option
+#: contrib/getopt.c:770
+#, c-format
+msgid "%s: unrecognized option `--%s'\n"
+msgstr ""
+
+#. +option or -option
+#: contrib/getopt.c:774
+#, c-format
+msgid "%s: unrecognized option `%c%s'\n"
+msgstr ""
+
+#. 1003.2 specifies the format of this message.
+#: contrib/getopt.c:800
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr ""
+
+#: contrib/getopt.c:803
+#, c-format
+msgid "%s: invalid option -- %c\n"
+msgstr ""
+
+#. 1003.2 specifies the format of this message.
+#: contrib/getopt.c:833 contrib/getopt.c:963
+#, c-format
+msgid "%s: option requires an argument -- %c\n"
+msgstr ""
+
+#: contrib/getopt.c:880
+#, c-format
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr ""
+
+#: contrib/getopt.c:898
+#, c-format
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr ""

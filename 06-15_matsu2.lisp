@@ -1,0 +1,1 @@
+(ff:def-foreign-call swap ((x :float)) :returning :float)

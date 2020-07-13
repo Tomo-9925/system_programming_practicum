@@ -1,0 +1,10 @@
+     ../src/circ_buf.c \
+     ../src/connection.c \
+     ../src/filter.c \
+     ../src/io_stream.c \
+     ../src/main.c \
+     ../src/misc.c \
+     ../src/network.c \
+     ../src/parser.c \
+     ../src/readwrite.c \
+     ../contrib/getopt.c \

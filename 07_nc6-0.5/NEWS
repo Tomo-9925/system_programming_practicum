@@ -1,0 +1,64 @@
+
+0.4
+
+This release fixes a couple of bugs (parsing of --no-reuseaddr option and a 
+weird bug in the readwrite function that could generate an endless loop) 
+and introduces the new features:
+
+1) idle timeouts
+2) --sndbuf-size and --rcvbuf-size options for setting SO_RCVBUF and
+   SO_SNDBUF respectively
+
+
+0.3
+
+This release introduces many new interesting features:
+
+1) accept/connect timeouts 
+2) hold timeouts
+3) recv-only and send-only modes
+4) half-close mode
+5) high flexibility of use
+6) i18n support
+7) enhanced UDP support
+
+For an in-depth description of these new features, please consult the man page.
+
+From this release nc6 uses, if present, the AI_ADDRCONFIG flag of getaddrinfo 
+for the connect mode. This changes the stupid use-IPv6-by-default behaviour 
+that is harmful if your system supports IPv6 but you don't have an IPv6 address 
+configured on your machine.
+
+Now file transfer mode works also with UDP. The configuration process and the 
+whole architecture of nc6 have been greatly improved.
+
+
+0.2pre3
+
+This release introduces an interesting mode for file transfers in TCP and 
+features many other minor enhancements in the code.
+
+
+0.2pre2
+
+This release finally introduces a good UDP support. Now netcat6 should 
+also compile without problems on glibc 2.1 systems. The man page has also
+been updated.
+
+
+0.2pre1
+
+This release introduces many bugfixes and some new features. Now netcat6 
+makes use of GNU autoconf/automake to automate the configuration and 
+build process.
+
+
+0.1
+
+This is a simple rewrite of netcat with advanced handling of internal
+buffers. It supports only TCP.
+
+
+					    Mauro Tortonesi
+					    <mauro _at_ deepspace6.net>
+					    
